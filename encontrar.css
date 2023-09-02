@@ -1,0 +1,172 @@
+body{
+    background-color: #c3e9ef;
+    background-size: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 0.8rem;
+    min-height: 50px;
+    background-color: #a7e1ea;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.img-topo{
+    height: 100%;
+    flex: 0 0 auto;
+}
+
+.logo{
+    max-height: 75px;
+}
+
+
+h1{
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color:#0098DA;
+}
+
+.container {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container-busca {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+input[type="text"],
+button,
+select {
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #414a53;
+}
+
+input[type="text"] {
+  flex: 1;
+  border: none;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px
+}
+
+button:hover {
+  background-color:  #29cd08;
+  border: 1px solid  #29cd08;
+  color: white;
+
+}
+
+select {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 14px;
+    width: 200px;
+    color: #414a53;
+}
+
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #04333a;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+footer{
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+:is(footer){
+  background-color: #a7e1ea;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+.itens-de-busca {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+  padding: 10px;
+  margin: 0 auto;
+  grid-gap: 20px;
+}
+
+.itens-de-busca > div:nth-child(n + 4) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+  align-items: center;
+}
+
+.itens-de-busca > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 600px) {
+  .itens-de-busca {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .itens-de-busca > div:nth-child(n + 4) {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+        max-width: 300px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    select {
+        max-width: 50%;
+    }
+}

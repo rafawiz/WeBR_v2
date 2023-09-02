@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeBR - Cadastre-se</title>
+
+    <link rel="shortcut icon" href="imagem/WeBR-ico.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="cadastrar.css">
+
+</head>
+<body>
+
+    <script src="cadastrar.js"></script>  
+
+    <div class="container">
+      <div class="header">
+        
+        <h2>Faça parte desta rede </h2>
+
+        <button id="fechar-btn"><a href="index.html">Fechar</button></a>
+
+      </div>
+
+      <form class="form" id="form">
+
+        <div class="form-control">
+          <label>Nome: </label>
+          <input type="text" id="username" required></input>
+        </div>
+
+        <div class="form-control">
+          <label>Data de nascimento:</label>
+          <input type="date" class="form-control" id="datanascimento" name="datanascimento" required />
+        </div>
+
+        <div class="form-control">
+          <label>E-mail: </label>
+          <input type="email" id="email" required></input>
+        </div>
+
+        <div class="form-control">
+          <label>Senha:</label>
+          <input type="password" placeholder = "******" id="senha" required></input>
+        </div>
+
+        <div class="form-control">
+          <label>Confirmar senha:</label>
+          <input type="password" placeholder = "******" id="senha2" required></input>
+        </div>
+
+        <p>Ao clicar em Cadastrar você concorda com os <a href=""> <strong>Termos & Política de Privacidade</strong></a>
+        <br><br>
+        <button><a href="index.html">Cadastrar</button></a>
+
+        <p>Já possui cadastro? <a href="login.html"><strong>Faça login</strong></a>
+        </p>
+      </form>
+      <p class="text">Criado por: Rafaella Wiziack &copy; 2023</p>
+
+    </div>
+  
+
+</body>
+</html>
